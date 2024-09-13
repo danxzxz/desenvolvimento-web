@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+
+</head>
+<body>
+    <h1>Formulários</h1>
+
+    <h2>Elemento input</h2>
+
+
+    <form action="#">
+        <div>
+            <label for="campo_nome">nome:</label>
+            <input type="text" id="campo_nome" name="campo_nome">
+        </div>
+
+    <div>
+    <label for="campo_idade">idade:</label>
+    <input type="number" name="campo_idade" min="0" max="200">
+    </div>
+
+    <div>
+        <label for="campo_cor">cor:</label>
+        <input type="color" name="cor">
+    </div>
+
+    <div>
+        <label for="campo_arquivo">arquivo:</label>
+        <input type="file" accept="image/*" src="user" name="campo_nome">
+    </div>
+
+
+
+    <div>
+    <label for="">
+        <input type="radio" name="campo_turno" value="manha">
+        manhã
+    </label>
+    <label for="">
+        <input type="radio" name="campo_turno" value="tarde">
+        tarde
+    </label>
+    <label for="">
+        <input type="radio" name="campo_turno" value="noite">
+        noite
+    </label>
+    </div>
+
+
+    <div>
+    <input type="submit">
+    </div>
+
+    </form>
+</body>
+</html>

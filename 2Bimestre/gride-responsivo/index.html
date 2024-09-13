@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Responsivo</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color:black ;
+            color: white;
+        }
+
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        [class^="col"] {
+            background-color: blueviolet;
+            border: solid 1px #fff;
+            padding: 10px;
+            
+        }
+
+        .leiaute  [class^="col"] {
+            float: left; 
+         }
+
+         .leiaute  [class^="col"]:nth-child(odd) {
+            background-color: purple;
+         }
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="col-1">1</div>
+    <div class="col-2">2</div>
+    <div class="col-3">3</div>
+    <div class="col-4">4</div>
+    <div class="col-5">5</div>
+    <div class="col-6">6</div>
+    <div class="col-7">7</div>
+    <div class="col-8">8</div>
+    <div class="col-9">9</div>
+    <div class="col-10">10</div>
+    <div class="col-11">11</div>
+    <div class="col-12">12</div>
+
+    <h2>Coluna lateral e conteúdo central</h2>
+
+    <div class="leiaute">
+
+        <header>
+
+            <div class="col-6">
+                 1 of 2
+            </div>
+
+            <div class="col-6">
+                2 of 2
+           </div>
+
+        </header>
+
+        <main>
+
+            <div class="col-3">
+
+                1 of 4
+    
+            </div>
+    
+            <div class="col-3">
+    
+                2 of 4
+    
+            </div>
+
+            <div class="col-3">
+
+                3 of 4
+    
+            </div>
+
+            <div class="col-3">
+
+                4 of 4
+    
+            </div>
+
+        </main>
+
+
+    </div>
+
+</body>
+</html>
