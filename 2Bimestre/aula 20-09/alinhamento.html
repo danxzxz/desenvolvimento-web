@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+
+        .container
+        {
+            display: flex;
+            background-color: lightgreen;
+            width: 600px;
+            height: 500px;
+
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            flex-wrap: wrap;
+
+        }
+
+        .item{
+            width: 200px;
+            height: 70px;
+            background-color: rgb(6, 188, 6);
+            border: solid 1px black;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .item:nth-child(4){
+            background-color: coral;
+            width: 100px;
+            height: 35px;
+            align-self: flex-end;
+            margin-left: 100px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>FlexBox</h1>
+
+    <h2>Alinhamento</h2> 
+    <div class="container">
+
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+
+    </div>
+
+</body>
+
+</html>
