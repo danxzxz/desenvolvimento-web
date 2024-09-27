@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+
+        .radius{    
+            border-radius: 5px;
+        }
+        .container 
+        {
+            background: lightgreen;
+            display: flex;
+            padding: 15px;
+
+            flex-wrap: wrap;
+        }
+
+        .flex-item
+        {
+            background-color: green;
+            padding: 10px;
+            flex-grow: 1;
+            text-align: center;
+            margin: 15px;
+        }
+
+        .direction-row-reverse{
+            flex-direction: row-reverse;
+        }
+
+        .direction-column{
+
+            flex-direction: column;
+        }
+
+        .direction-column-reverse{
+            flex-direction: column-reverse;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <h1>FlexBox</h1>
+
+    <h2>Esquerda pra direita</h2>
+
+    <div class="container radius">
+
+        <div class="flex-item radius">Homem-Aranha</div>
+
+        <div class="flex-item radius">Lanterna-verde</div>
+
+        <div class="flex-item radius">Batman</div>
+
+        <div class="flex-item radius">jeffinho</div>
+
+        <div class="flex-item radius">cleber bambam</div>
+
+    </div>
+
+    <h2>Direita pra esquerda</h2>
+
+    <div class="container radius direction-row-reverse">
+
+        <div class="flex-item radius">Homem-Aranha</div>
+
+        <div class="flex-item radius">Lanterna-verde</div>
+
+        <div class="flex-item radius">Batman</div>
+
+        <div class="flex-item radius">jeffinho</div>
+
+        <div class="flex-item radius">cleber bambam</div>
+
+    </div>
+
+    <h2>Cima para baixo</h2>
+
+    <div class="container radius direction-column">
+
+        <div class="flex-item radius">Homem-Aranha</div>
+
+        <div class="flex-item radius">Lanterna-verde</div>
+
+        <div class="flex-item radius">Batman</div>
+
+        <div class="flex-item radius">jeffinho</div>
+
+        <div class="flex-item radius">cleber bambam</div>
+
+    </div>
+
+    <h2>Baixo para cima</h2>
+
+    <div class="container radius direction-column-reverse">
+
+        <div class="flex-item radius">Homem-Aranha</div>
+
+        <div class="flex-item radius">Lanterna-verde</div>
+
+        <div class="flex-item radius">Batman</div>
+
+        <div class="flex-item radius">jeffinho</div>
+
+        <div class="flex-item radius">cleber bambam</div>
+
+    </div>
+
+
+</body>
+
+</html>
