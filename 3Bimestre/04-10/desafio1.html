@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+
+
+</head>
+<body>
+
+    <!-- //DESAFIO 1 -->
+    <p id="paragrafo">? </p>
+
+    <!-- //DESAFIO 2 -->
+
+    <div class="caixa">a</div>
+    <div class="caixa">a</div>
+    <div class="caixa">a</div>
+
+    <!-- //DESAFIO 3 -->
+
+    <div class="container">
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <p>4</p>
+        <p>5</p>
+        
+    </div>
+
+    <!-- //DESAFIO 4 -->
+
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <button>
+        a
+    </button>
+
+    <script>
+        //DESAFIO 1
+        let p = document.getElementById('paragrafo')
+        p.innerText = "Olá mundo."
+        p.style.fontSize = '40px'
+
+        //DESAFIO 2
+        let caixas = document.getElementsByClassName('caixa')
+        caixas[0].style.background = 'blue'
+        caixas[1].style.background = 'blue'
+        caixas[2].style.background = 'blue'
+
+        //DESAFIO 3
+        let container = document.querySelector(".container")
+        let t = container.getElementsByTagName('p')
+        t[2].innerText = 'Texto alterado!'
+
+
+        //DESAFIO 4
+        let li = document.querySelector('li')
+        li.style.color = 'red'
+      
+    </script>
+</body>
+</html>
