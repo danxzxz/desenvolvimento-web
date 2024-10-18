@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1{
+            font-size: 100px;
+        }
+    </style>
+
+<body>
+    <button>inicar contagem regressiva</button>
+    <h1>10</h1>
+    
+    <script>
+        let contador = 10;
+        const regressiva = document.querySelector('h1');
+
+       
+        let interval = setInterval(()=>{
+            regressiva.innerText = contador;
+            contador--; 
+
+            if (contador == -1){
+            clearInterval(interval);
+
+            }
+        }, 1000);
+    
+
+    </script>
+</body>
+
+</html>

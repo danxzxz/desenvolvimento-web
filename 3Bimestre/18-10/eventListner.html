@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>clique aqui</button>
+    <p></p>
+    <input type="text">
+    <h1></h1>
+    
+    <script>
+
+        let numeroCliques = 0
+        const botao = document.querySelector('button')
+        const texto = document.querySelector('p')
+        const input = document.querySelector('input')
+        const paragrafo = document.querySelectorAll('h1')
+        botao.onclick =
+            // função anonima
+            input.addEventListener('keyup', () => {
+                let textoDigitado = input.value;
+
+                if (textoDigitado == "frango com catupiry") {
+                    paragrafo[0].innerText = "MUITO BOM"
+
+                } else if (textoDigitado == "calabresa") {
+                    paragrafo[0].innerText = "MUITO BOM TBM"
+                }
+
+                // } else {
+                //     paragrafo[0].innerText = "TOP"
+
+                // }
+            })
+        botao.addEventListener('click', () => {
+            numeroCliques++
+            texto.innerText = `Você clicou ${numeroCliques} vezes`
+        })
+
+
+
+        document.addEventListener('click' , ()=> {
+
+            let bgColor = 'rgb(' + Math.random() * 255 + ',' + Math.random() * 255 + ',' + Math.random() * 255 + ')';
+            document.body.style.backgroundColor = bgColor
+        });
+    </script>
+</body>
+
+</html>

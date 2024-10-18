@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>QUAL SEU SABOR FAVORITO DE SORVETE?</h1>
+    <input type="text">
+    <p></p>
+    
+    <script>
+
+
+
+        const texto = document.querySelectorAll('p')
+        const input = document.querySelector('input')
+
+        
+        input.onclick =
+
+            input.addEventListener('keyup', () => {
+                let textoDigitado = input.value;
+
+                if (textoDigitado == "chocolate") {
+                    texto[0].innerText = "eu amo sorvete de chocolate"
+
+                } else {
+                     texto[0].innerText = "não é tão bom quanto chocolate né"
+
+                 }
+            })
+
+    </script>
+</body>
+
+</html>
